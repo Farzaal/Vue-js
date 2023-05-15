@@ -17,6 +17,21 @@
   "resolved" "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz"
   "version" "1.4.15"
 
+"@lottiefiles/lottie-player@^0.3.0-rc2":
+  "integrity" "sha512-XxRTIEiD3LUUOmsymhLmtyMpGpjRMQhuOqjF3K8PDIE0UEi/yWS67N4klx5UccTACc/pI2TSB5oKl31Z9qVSeA=="
+  "resolved" "https://registry.npmjs.org/@lottiefiles/lottie-player/-/lottie-player-0.3.0.tgz"
+  "version" "0.3.0"
+  dependencies:
+    "@types/pako" "^1.0.1"
+    "lit-element" "^2.3.1"
+    "lottie-web" "^5.6.6"
+    "pako" "^1.0.11"
+
+"@types/pako@^1.0.1":
+  "integrity" "sha512-Z+5bJSm28EXBSUJEgx29ioWeEEHUh6TiMkZHDhLwjc9wVFH+ressbkmX6waUZc5R3Gobn4Qu5llGxaoflZ+yhA=="
+  "resolved" "https://registry.npmjs.org/@types/pako/-/pako-1.0.4.tgz"
+  "version" "1.0.4"
+
 "@vitejs/plugin-vue@^4.1.0":
   "integrity" "sha512-ZTZjzo7bmxTRTkb8GSTwkPOYDIP7pwuyV+RV53c9PYUouwcbkIZIvWvNWlX2b1dYZqtOv7D6iUAnJLVNGcLrSw=="
   "resolved" "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-4.2.1.tgz"
@@ -296,6 +311,30 @@
   "resolved" "https://registry.npmjs.org/he/-/he-1.2.0.tgz"
   "version" "1.2.0"
 
+"lit-element@^2.3.1":
+  "integrity" "sha512-ogu7PiJTA33bEK0xGu1dmaX5vhcRjBXCFexPja0e7P7jqLhTpNKYRPmE+GmiCaRVAbiQKGkUgkh/i6+bh++dPQ=="
+  "resolved" "https://registry.npmjs.org/lit-element/-/lit-element-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "lit-html" "^1.1.1"
+
+"lit-html@^1.1.1":
+  "integrity" "sha512-B9btcSgPYb1q4oSOb/PrOT6Z/H+r6xuNzfH4lFli/AWhYwdtrgQkQWBbIc6mdnf6E2IL3gDXdkkqNktpU0OZQA=="
+  "resolved" "https://registry.npmjs.org/lit-html/-/lit-html-1.4.1.tgz"
+  "version" "1.4.1"
+
+"lottie-player-vue@^0.0.16":
+  "integrity" "sha512-uc7C/SViav2OhGBP2Km4rPWmPFjyIzxR8kj5QzDzBrojcsGGIyR2r5DjXBaXCdkD2tT9bbgh+qyvpZ+8rrRwGA=="
+  "resolved" "https://registry.npmjs.org/lottie-player-vue/-/lottie-player-vue-0.0.16.tgz"
+  "version" "0.0.16"
+  dependencies:
+    "@lottiefiles/lottie-player" "^0.3.0-rc2"
+
+"lottie-web@^5.6.6":
+  "integrity" "sha512-9vSt0AtdOH98GKDXwD5LPfFg9Pcmxt5+1BllAbudKM5iqPxpJnJUfuGaP45OyudDrESCOBgsjnntVUTygBNlzw=="
+  "resolved" "https://registry.npmjs.org/lottie-web/-/lottie-web-5.11.0.tgz"
+  "version" "5.11.0"
+
 "lru-cache@^6.0.0":
   "integrity" "sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA=="
   "resolved" "https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz"
@@ -333,6 +372,11 @@
   "integrity" "sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA=="
   "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.3.6.tgz"
   "version" "3.3.6"
+
+"pako@^1.0.11":
+  "integrity" "sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw=="
+  "resolved" "https://registry.npmjs.org/pako/-/pako-1.0.11.tgz"
+  "version" "1.0.11"
 
 "picocolors@^1.0.0":
   "integrity" "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ=="

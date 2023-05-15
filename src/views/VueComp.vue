@@ -1,2017 +1,390 @@
 
     <template>
-      <div class="homepageTestCase">
-        <header class="topHeader">
-          <div class="topContainer">
-            <img class="fickleflightIcon" alt="" src="/fickleflight.svg" />
-            <div class="navigationRight">
-              <div class="navigationMenu">
-                <div class="explore">Explore</div>
-                <div class="search">Search</div>
-                <button class="hotels">Hotels</button>
-                <button class="hotels">Offers</button>
-              </div>
-              <div class="accountSection">
-                <img class="hamburgerMenuIcon" alt="" src="/notification.svg" />
-                <img class="notificationBellIcon" alt="" src="/notification1.svg" />
-                <img class="avatarIcon" alt="" src="/top_avatar@2x.png" />
+        <div :style={position: 'relative', backgroundColor: '#fff', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-start', textAlign: 'left', fontSize: '16px', color: '#0c0047', fontFamily: ''Be Vietnam Pro'',}>
+          <div :style={alignSelf: 'stretch', backgroundColor: '#00218f', display: 'flex', flexDirection: 'column', padding: '0px 0px 100px', alignItems: 'center', justifyContent: 'flex-start', position: 'relative', gap: '50px', zIndex: '5', color: '#fff',}>
+            <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'row', padding: '40px 40px 0px', alignItems: 'center', justifyContent: 'space-between', zIndex: '0',}>
+              <button :style={cursor: 'pointer', border: 'none', padding: '0', backgroundColor: 'transparent', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', gap: '10px',} @click='onFrameButtonClick'>
+                <img :style={position: 'relative', width: '37.34px', height: '36px', flexShrink: '0',} alt='' src='/vector.svg' />
+                <div :style={position: 'relative', fontSize: '18px', lineHeight: '21px', fontWeight: '600', fontFamily: ''Be Vietnam Pro'', color: '#fff', textAlign: 'left',}>GroundDesk</div>
+              </button>
+              <div :style={display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', gap: '40px',}>
+                <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '40px',}>
+                  <div :style={position: 'relative', letterSpacing: '-0.32px', lineHeight: '21px',}>Product</div>
+                  <div :style={position: 'relative', letterSpacing: '-0.32px', lineHeight: '21px',}>Solution</div>
+                  <div :style={position: 'relative', letterSpacing: '-0.32px', lineHeight: '21px',}>Customer</div>
+                  <div :style={position: 'relative', letterSpacing: '-0.32px', lineHeight: '21px',}>Pricing</div>
+                  <div :style={position: 'relative', letterSpacing: '-0.32px', lineHeight: '21px',}>About us</div>
+                </div>
+                <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '30px',}>
+                  <button :style={cursor: 'pointer', border: '1px solid #fff', padding: '12px 45px', backgroundColor: 'transparent', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start',}>
+                    <div :style={position: 'relative', fontSize: '14px', letterSpacing: '-0.41px', lineHeight: '22px', fontFamily: ''Be Vietnam Pro'', color: '#fff', textAlign: 'left',}>Login</div>
+                  </button>
+                  <button :style={cursor: 'pointer', border: 'none', padding: '12px 45px', backgroundColor: '#fff', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start',}>
+                    <div :style={position: 'relative', fontSize: '14px', letterSpacing: '-0.41px', lineHeight: '22px', fontFamily: ''Be Vietnam Pro'', color: '#6a4bff', textAlign: 'left',}>Sign up</div>
+                  </button>
+                </div>
               </div>
             </div>
+            <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', gap: '40px', zIndex: '1', textAlign: 'center', fontSize: '64px',}>
+              <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center',}>
+                <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '81px', textTransform: 'capitalize', fontWeight: '700', display: 'inline-block', width: '813px', flexShrink: '0',}>We help to get Business solution ever</div>
+              </div>
+              <div :style={position: 'relative', fontSize: '17px', letterSpacing: '-0.41px', lineHeight: '32px', display: 'inline-block', width: '579px',}>We provide many features that you can use cheaply and easily. Try it now and get an interesting promo</div>
+              <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '25px',}>
+                <button :style={cursor: 'pointer', border: 'none', padding: '12px 45px', backgroundColor: '#fff', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start',}>
+                  <div :style={position: 'relative', fontSize: '14px', letterSpacing: '-0.41px', lineHeight: '22px', fontFamily: ''Be Vietnam Pro'', color: '#6a4bff', textAlign: 'left',}>Try for free</div>
+                </button>
+                <button :style={cursor: 'pointer', border: '1px solid #fff', padding: '12px 45px', backgroundColor: 'transparent', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start',}>
+                  <div :style={position: 'relative', fontSize: '14px', letterSpacing: '-0.41px', lineHeight: '22px', fontFamily: ''Be Vietnam Pro'', color: '#fff', textAlign: 'left',}>Watch a demo</div>
+                </button>
+              </div>
+              <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start',}>
+                <img :style={position: 'relative', borderRadius: '20px 0px 0px 20px', width: '599px', height: '777px', flexShrink: '0', objectFit: 'cover',} alt='' src='/dashboard--light-1@2x.png' />
+                <img :style={position: 'relative', borderRadius: '0px 20px 20px 0px', width: '598px', height: '777px', flexShrink: '0', objectFit: 'cover',} alt='' src='/dashboard--dark-1@2x.png' />
+              </div>
+            </div>
+            <button :style={cursor: 'pointer', border: 'none', padding: '0', backgroundColor: 'transparent', position: 'absolute', margin: '0', height: '2.33%', width: '3.13%', top: '3.76%', right: '3.7%', bottom: '93.91%', left: '93.17%', display: 'none', zIndex: '2',}>
+              <img :style={position: 'absolute', height: '143.99%', width: '120.96%', top: '-21.99%', right: '-10.48%', bottom: '-21.99%', left: '-10.48%', maxWidth: '100%', overflow: 'hidden', maxHeight: '100%',} alt='' src='/group.svg' />
+            </button>
           </div>
-        </header>
-        <div class="homeContents">
-          <div class="upcomingFlightSection">
-            <b class="recentSearches">Recent Searches</b>
-            <div class="flightDetails">
-              <div class="recentSearchesSection">
-                <div class="recentSearch">
-                  <div class="toAndFrom">
-                    <b class="departure">SIN</b>
-                    <img class="planeicon" alt="" src="/planeicon.svg" />
-                    <b class="arrival">LAX</b>
-                  </div>
-                  <div class="departureInfo">
-                    <b class="departure">{`Depart on: `}</b>
-                    <div class="departure">7 Sep 2023</div>
-                  </div>
-                </div>
-                <div class="recentSearch">
-                  <div class="toAndFrom">
-                    <b class="departure">MY</b>
-                    <img class="planeicon" alt="" src="/planeicon1.svg" />
-                    <b class="arrival">DUB</b>
-                  </div>
-                  <div class="departureInfo">
-                    <b class="departure">{`Depart on: `}</b>
-                    <div class="departure">9 Sep 2023</div>
-                  </div>
+          <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'row', padding: '40px 100px', alignItems: 'flex-start', justifyContent: 'space-between', zIndex: '4',}>
+            <img :style={position: 'relative', width: '240px', height: '80px', flexShrink: '0', overflow: 'hidden',} alt='' src='/servicenow.svg' />
+            <img :style={position: 'relative', width: '240px', height: '80px', flexShrink: '0', overflow: 'hidden',} alt='' src='/paychex.svg' />
+            <div :style={position: 'relative', width: '240px', height: '80px', flexShrink: '0',}>
+              <div :style={position: 'absolute', top: '0px', left: '0px', width: '160px', height: '80px',}>
+                <img :style={position: 'absolute', top: 'calc(50% - 24px)', left: 'calc(50% - 82px)', width: '163.49px', height: '48px', objectFit: 'cover', display: 'none',} alt='' src='/freshbookslogo1-1@2x.png' />
+                <div :style={position: 'absolute', width: '100%', top: '0px', right: '0px', left: '0px', height: '80px', overflow: 'hidden', display: 'none', opacity: '0.4',}>
+                  <div :style={position: 'absolute', width: '100%', top: '0px', right: '0px', left: '0px', backgroundColor: '#37b8af', height: '24px', opacity: '0.24',} />
+                  <div :style={position: 'absolute', top: '0px', left: '0px', backgroundColor: '#37b8af', width: '16px', height: '80px', opacity: '0.24',} />
+                  <div :style={position: 'absolute', top: '0px', right: '0px', backgroundColor: '#37b8af', width: '16px', height: '80px', opacity: '0.24',} />
+                  <div :style={position: 'absolute', width: '100%', top: '56px', right: '0px', left: '0px', backgroundColor: '#37b8af', height: '24px', opacity: '0.24',} />
                 </div>
               </div>
-              <div class="prepareMenu">
-                <div class="recentSearches">Prepare for your trip</div>
-                <div class="tripMenu">
-                  <button class="tripMenuItem" @click={onTripMenuItemClick}>
-                    <div class="icon">
-                      <img class="iconVector" alt="" src="/icon.svg" />
-                    </div>
-                    <div class="text">Hotel</div>
-                  </button>
-                  <button class="tripMenuItem">
-                    <div class="icon1">
-                      <img class="iconVector" alt="" src="/icon1.svg" />
-                    </div>
-                    <div class="text">Attractions</div>
-                  </button>
-                  <button class="tripMenuItem">
-                    <div class="icon2">
-                      <img class="iconVector" alt="" src="/icon2.svg" />
-                    </div>
-                    <div class="text">Eats</div>
-                  </button>
-                  <button class="tripMenuItem">
-                    <div class="icon3">
-                      <img class="iconVector" alt="" src="/icon3.svg" />
-                    </div>
-                    <div class="text">Commute</div>
-                  </button>
-                  <button class="tripMenuItem">
-                    <div class="icon4">
-                      <img class="iconVector" alt="" src="/icon4.svg" />
-                    </div>
-                    <div class="text">Taxi</div>
-                  </button>
-                  <button class="tripMenuItem">
-                    <div class="icon5">
-                      <img class="iconVector" alt="" src="/icon5.svg" />
-                    </div>
-                    <div class="text">Movies</div>
-                  </button>
-                </div>
-              </div>
+              <img :style={position: 'absolute', top: 'calc(50% - 28px)', left: 'calc(50% - 68px)', width: '136.59px', height: '56px', objectFit: 'cover',} alt='' src='/github-logo-1@2x.png' />
             </div>
+            <img :style={position: 'relative', width: '240px', height: '80px', flexShrink: '0', overflow: 'hidden',} alt='' src='/stripe.svg' />
+            <img :style={position: 'relative', width: '240px', height: '80px', flexShrink: '0', overflow: 'hidden',} alt='' src='/zendesk.svg' />
           </div>
-          <div class="popDestinationsMain">
-            <div class="destinationsTitles">
-              <div class="titleContainer">
-                <b class="recentSearches">Plan your next trip</b>
-                <b class="mostPopularLocofy">Most Popular locofy Destinations</b>
+          <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', gap: '40px', zIndex: '3', textAlign: 'center', fontSize: '36px',}>
+            <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', gap: '25px',}>
+              <b :style={position: 'relative', letterSpacing: '0.01em', textTransform: 'capitalize',}>Our Solution for your business</b>
+              <div :style={position: 'relative', fontSize: '14px', letterSpacing: '-0.41px', color: '#969696', textAlign: 'left',}>We make it easy for users to use our platform, that's why we provide this benefit.</div>
+            </div>
+            <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'row', padding: '0px 60px 50px', alignItems: 'flex-start', justifyContent: 'space-between', textAlign: 'left', fontSize: '14px', color: '#969696',}>
+              <div :style={position: 'relative', width: '276px', height: '344px', flexShrink: '0',}>
+                <div :style={position: 'absolute', top: '0px', left: '0px', borderRadius: '15px', backgroundColor: '#fff', border: '1px solid #eaeaea', boxSizing: 'border-box', width: '276px', height: '344px',} />
+                <div :style={position: 'absolute', top: '32px', left: '32px', borderRadius: '15px', backgroundColor: '#f2f2ff', width: '64px', height: '64px',} />
+                <img :style={position: 'absolute', top: '44px', left: '44px', borderRadius: '15px', width: '40px', height: '40px', overflow: 'hidden',} alt='' src='/protect-cloud.svg' />
+                <div :style={position: 'absolute', top: '166px', left: '32px', letterSpacing: '-0.41px', lineHeight: '170%', display: 'inline-block', width: '212px',}>All information and transactions will be well encrypted and double security in every activity. Safer transactions, calmer users</div>
+                <div :style={position: 'absolute', top: '289px', left: '32px', fontSize: '16px', textDecoration: 'underline', letterSpacing: '-0.41px', fontWeight: '600', color: '#6a4bff',}>Learn more</div>
+                <div :style={position: 'absolute', top: '120px', left: '32px', fontSize: '22px', letterSpacing: '-0.41px', lineHeight: '30px', fontWeight: '600', color: '#343434',}>Finance Security</div>
               </div>
-              <button class="viewAllTop">
-                <div class="viewAllDestinations">View all destinations</div>
-                <img class="notificationBellIcon" alt="" src="/arrowright.svg" />
-              </button>
-            </div>
-            <div class="popDestinationItems">
-              <button class="popularDestinationCard">
-                <div class="pariscard">
-                  <img class="cardimageIcon" alt="" src="/cardimage@2x.png" />
-                  <div class="destinationDetails">
-                    <b class="destination">Paris</b>
-                    <div class="details">
-                      <div class="from">from</div>
-                      <div class="price">$699</div>
-                    </div>
-                  </div>
-                </div>
-              </button>
-              <button class="popularDestinationCard">
-                <div class="pariscard">
-                  <img class="cardimageIcon" alt="" src="/cardimage1@2x.png" />
-                  <div class="destinationDetails">
-                    <b class="destination">Greece</b>
-                    <div class="details">
-                      <div class="from">from</div>
-                      <div class="price">$1079</div>
-                    </div>
-                  </div>
-                </div>
-              </button>
-              <button class="popularDestinationCard">
-                <div class="pariscard">
-                  <img class="cardimageIcon" alt="" src="/cardimage2@2x.png" />
-                  <div class="destinationDetails">
-                    <b class="destination">Norway</b>
-                    <div class="details">
-                      <div class="from">from</div>
-                      <div class="price">$895</div>
-                    </div>
-                  </div>
-                </div>
-              </button>
-              <button class="popularDestinationCard">
-                <div class="pariscard">
-                  <img class="cardimageIcon" alt="" src="/cardimage3@2x.png" />
-                  <div class="destinationDetails">
-                    <b class="destination">Tuscany</b>
-                    <div class="details">
-                      <div class="from">from</div>
-                      <div class="price">$1245</div>
-                    </div>
-                  </div>
-                </div>
-              </button>
-            </div>
-            <div class="viewAllBottom">
-              <div class="viewAllDestinations1">View all destinations</div>
-              <img class="notificationBellIcon" alt="" src="/arrowright.svg" />
-            </div>
-          </div>
-          <div class="recommendedHolidaysContainer">
-            <div class="recHolidaysTitle">
-              <b class="recommendedLocofyHolidays">Recommended locofy Holidays</b>
-              <button class="viewAllTop">
-                <div class="viewAllDestinations">View all holidays</div>
-                <img class="notificationBellIcon" alt="" src="/arrowright1.svg" />
-              </button>
-            </div>
-            <div class="recCardsContainer">
-              <button class="recommendedHolidayCard">
-                <img class="imageIcon" alt="" src="/image@2x.png" />
-                <div class="holidayDetails">
-                  <div class="recHolidaysTitle">
-                    <div class="destinationParent">
-                      <div class="swiss">Bali</div>
-                      <div class="duration">4D3N</div>
-                    </div>
-                    <div class="div">$899</div>
-                  </div>
-                </div>
-              </button>
-              <button class="recommendedHolidayCard">
-                <img class="imageIcon" alt="" src="/switzerlandimage@2x.png" />
-                <div class="holidayDetails">
-                  <div class="recHolidaysTitle">
-                    <div class="destinationParent">
-                      <div class="swiss">Swiss</div>
-                      <div class="duration">6D5N</div>
-                    </div>
-                    <div class="div">$900</div>
-                  </div>
-                </div>
-              </button>
-              <button class="recommendedHolidayCard2">
-                <img class="imageIcon" alt="" src="/boracayimage@2x.png" />
-                <div class="holidayDetails">
-                  <div class="recHolidaysTitle">
-                    <div class="destinationParent">
-                      <div class="swiss">Boracay</div>
-                      <div class="duration">5D4N</div>
-                    </div>
-                    <div class="div">$699</div>
-                  </div>
-                </div>
-              </button>
-              <button class="recommendedHolidayCard3">
-                <img class="imageIcon" alt="" src="/palawanimage@2x.png" />
-                <div class="holidayDetails">
-                  <div class="recHolidaysTitle">
-                    <div class="destinationParent">
-                      <div class="swiss">Palawan</div>
-                      <div class="duration">4D3N</div>
-                    </div>
-                    <div class="div">$789</div>
-                  </div>
-                </div>
-              </button>
-            </div>
-            <div class="viewHolidaysBottom">
-              <div class="viewAllDestinations1">View all holidays</div>
-              <img class="notificationBellIcon" alt="" src="/arrowright.svg" />
-            </div>
-          </div>
-          <div class="popularStays">
-            <div class="popularStaysHeader">
-              <div class="popularStaysTitle">
-                <b class="popularStays1">Popular Stays</b>
+              <div :style={position: 'relative', width: '276px', height: '344px', flexShrink: '0',}>
+                <div :style={position: 'absolute', top: '0px', left: '0px', borderRadius: '15px', backgroundColor: '#fff', border: '1px solid #eaeaea', boxSizing: 'border-box', width: '276px', height: '344px',} />
+                <div :style={position: 'absolute', top: '32px', left: '32px', borderRadius: '15px', backgroundColor: '#f2f2ff', width: '64px', height: '64px',} />
+                <img :style={position: 'absolute', top: '44px', left: '44px', borderRadius: '15px', width: '40px', height: '40px', overflow: 'hidden',} alt='' src='/secure.svg' />
+                <div :style={position: 'absolute', top: '166px', left: '32px', letterSpacing: '-0.41px', lineHeight: '170%', display: 'inline-block', width: '212px',}>Synced from a Windows, Mac, or Ubuntu Linux computer to the cloud and vice versa without any problems.</div>
+                <div :style={position: 'absolute', top: '286px', left: '32px', fontSize: '16px', textDecoration: 'underline', letterSpacing: '-0.41px', fontWeight: '600', color: '#6a4bff',}>Learn more</div>
+                <div :style={position: 'absolute', top: '120px', left: '32px', fontSize: '22px', letterSpacing: '-0.41px', lineHeight: '30px', fontWeight: '600', color: '#343434',}>Synchronization</div>
               </div>
-              <button class="viewAllTop" @click={onViewAllStaysButtonclick}>
-                <div class="viewAllDestinations">View all stays</div>
-                <img class="notificationBellIcon" alt="" src="/arrowright1.svg" />
-              </button>
-            </div>
-            <div class="hotelCards">
-              <div class="popularHotelCard">
-                <div class="hotelCard">
-                  <img class="imageIcon1" alt="" src="/unsplashrlwe8f8anoc@2x.png" />
-                  <div class="stayDetails">
-                    <div class="stayDetailsRows">
-                      <div class="type">Entire bungalow</div>
-                      <b class="title">Matterhorn Suites</b>
-                      <div class="price5">$575/night</div>
-                    </div>
-                    <button class="video">
-                      <img class="videoIcon" alt="" src="/video-icon.svg" />
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <div class="stars">
-                      <img class="staricon" alt="" src="/staricon.svg" />
-                      <div class="rating1">4.9</div>
-                    </div>
-                    <div class="reviews">(60 reviews)</div>
-                  </div>
-                  <button class="moreDetailsButton">
-                    <div class="button">More details</div>
-                  </button>
-                </div>
+              <div :style={position: 'relative', width: '276px', height: '344px', flexShrink: '0', fontSize: '22px', color: '#343434',}>
+                <div :style={position: 'absolute', top: '0px', left: '0px', borderRadius: '15px', backgroundColor: '#fff', border: '1px solid #eaeaea', boxSizing: 'border-box', width: '276px', height: '344px',} />
+                <div :style={position: 'absolute', top: '32px', left: '32px', borderRadius: '15px', backgroundColor: '#f2f2ff', width: '64px', height: '64px',} />
+                <img :style={position: 'absolute', top: '44px', left: '44px', borderRadius: '15px', width: '40px', height: '40px', overflow: 'hidden',} alt='' src='/protect-cloud1.svg' />
+                <div :style={position: 'absolute', top: '120px', left: '32px', letterSpacing: '-0.41px', lineHeight: '30px', fontWeight: '600',}>Cloud Drive</div>
+                <div :style={position: 'absolute', top: '166px', left: '32px', fontSize: '14px', letterSpacing: '-0.41px', lineHeight: '170%', color: '#969696', display: 'inline-block', width: '212px',}>It doesn't cost a fortune to move your work online —in fact, it's free! Starting from 5 GB of free storage.</div>
+                <div :style={position: 'absolute', top: '286px', left: '32px', fontSize: '16px', textDecoration: 'underline', letterSpacing: '-0.41px', fontWeight: '600', color: '#6a4bff',}>Learn more</div>
               </div>
-              <div class="popularHotelCard">
-                <div class="hotelCard">
-                  <img class="imageIcon1" alt="" src="/unsplashrlwe8f8anoc1@2x.png" />
-                  <div class="stayDetails">
-                    <div class="stayDetailsRows">
-                      <div class="type">2-Story beachfront suite</div>
-                      <b class="title">Discovery Shores</b>
-                      <div class="price5">$360/night</div>
-                    </div>
-                    <button class="video">
-                      <img class="videoIcon" alt="" src="/video-icon.svg" />
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <div class="stars">
-                      <img class="staricon" alt="" src="/staricon.svg" />
-                      <div class="rating1">4.8</div>
-                    </div>
-                    <div class="reviews">(116 reviews)</div>
-                  </div>
-                  <button class="moreDetailsButton">
-                    <div class="button">More details</div>
-                  </button>
-                </div>
-              </div>
-              <div class="popularHotelCard">
-                <div class="hotelCard">
-                  <img class="imageIcon1" alt="" src="/unsplashrlwe8f8anoc2@2x.png" />
-                  <div class="stayDetails">
-                    <div class="stayDetailsRows">
-                      <div class="type">Single deluxe hut</div>
-                      <b class="title">{`Arctic Hut `}</b>
-                      <div class="price5">$420/night</div>
-                    </div>
-                    <button class="video">
-                      <img class="videoIcon" alt="" src="/video-icon1.svg" />
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <div class="stars">
-                      <img class="staricon" alt="" src="/staricon.svg" />
-                      <div class="rating1">4.7</div>
-                    </div>
-                    <div class="reviews">(78 reviews)</div>
-                  </div>
-                  <button class="moreDetailsButton">
-                    <div class="button">More details</div>
-                  </button>
-                </div>
-              </div>
-              <div class="popularHotelCard3">
-                <div class="hotelCard">
-                  <img class="imageIcon1" alt="" src="/unsplashrlwe8f8anoc3@2x.png" />
-                  <div class="stayDetails">
-                    <div class="stayDetailsRows">
-                      <div class="type">Deluxe King Room</div>
-                      <b class="title">Lake Louise Inn</b>
-                      <div class="price5">$244/night</div>
-                    </div>
-                    <button class="video">
-                      <img class="videoIcon" alt="" src="/video-icon1.svg" />
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <div class="stars">
-                      <img class="staricon" alt="" src="/staricon.svg" />
-                      <div class="rating1">4.6</div>
-                    </div>
-                    <div class="reviews">(63 reviews)</div>
-                  </div>
-                  <button class="moreDetailsButton">
-                    <div class="button">More details</div>
-                  </button>
-                </div>
+              <div :style={position: 'relative', width: '276px', height: '344px', flexShrink: '0',}>
+                <div :style={position: 'absolute', top: '0px', left: '0px', borderRadius: '15px', backgroundColor: '#fff', border: '1px solid #eaeaea', boxSizing: 'border-box', width: '276px', height: '344px',} />
+                <div :style={position: 'absolute', top: '32px', left: '32px', borderRadius: '15px', backgroundColor: '#f2f2ff', width: '64px', height: '64px',} />
+                <img :style={position: 'absolute', top: '44px', left: '44px', borderRadius: '15px', width: '40px', height: '40px', overflow: 'hidden',} alt='' src='/target.svg' />
+                <div :style={position: 'absolute', top: '166px', left: '32px', letterSpacing: '-0.41px', lineHeight: '170%', display: 'inline-block', width: '212px',}>Ease of accessing files locked by someone with the sharing with friend feature so you can enjoy it together.</div>
+                <div :style={position: 'absolute', top: '286px', left: '32px', fontSize: '16px', textDecoration: 'underline', letterSpacing: '-0.41px', fontWeight: '600', color: '#6a4bff',}>Learn more</div>
+                <div :style={position: 'absolute', top: '120px', left: '32px', fontSize: '22px', letterSpacing: '-0.41px', lineHeight: '30px', fontWeight: '600', color: '#343434',}>File Sharing</div>
               </div>
             </div>
-            <div class="mobileViewAllStays">
-              <div class="viewAllDestinations1">View all stays</div>
-              <img class="notificationBellIcon" alt="" src="/arrowright.svg" />
-            </div>
-          </div>
-          <div class="popularStays">
-            <div class="popularStaysHeader">
-              <div class="popularStaysTitle">
-                <b class="popularStays1">Popular Stays</b>
+            <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'column', padding: '0px 0px 40px', alignItems: 'center', justifyContent: 'flex-start', gap: '22px', fontSize: '52px',}>
+              <b :style={position: 'relative', letterSpacing: '0.01em', display: 'inline-block', width: '534px',}>Our pricing</b>
+              <div :style={position: 'relative', fontSize: '14px', letterSpacing: '-0.41px', color: '#969696', display: 'inline-block', width: '537px',}>{`Pay securely online and manage the booking via desktop or via the mobile app.  `}</div>
+              <div :style={display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', position: 'relative', gap: '24px', textAlign: 'left', fontSize: '16px', color: '#343434',}>
+                <div :style={position: 'relative', letterSpacing: '-0.41px', lineHeight: '24px', fontWeight: '500', display: 'inline-block', width: '61px', flexShrink: '0', zIndex: '0',}>Monthly</div>
+                <div :style={position: 'relative', borderRadius: '48px', backgroundColor: '#f2f2ff', width: '100px', height: '48px', flexShrink: '0', zIndex: '1',} />
+                <div :style={position: 'relative', letterSpacing: '-0.41px', lineHeight: '24px', fontWeight: '500', display: 'inline-block', width: '62px', flexShrink: '0', zIndex: '2',}>Annualy</div>
+                <img :style={position: 'absolute', margin: '0', top: '8px', left: '103.5px', width: '32px', height: '32px', flexShrink: '0', zIndex: '3',} alt='' src='/ellipse-262.svg' />
               </div>
-              <button class="viewAllTop" @click={onViewAllStaysButton1Click}>
-                <div class="viewAllDestinations">View all stays</div>
-                <img class="notificationBellIcon" alt="" src="/arrowright1.svg" />
-              </button>
-            </div>
-            <div class="hotelCards">
-              <div class="popularHotelCard">
-                <div class="hotelCard">
-                  <img class="imageIcon1" alt="" src="/unsplashrlwe8f8anoc@2x.png" />
-                  <div class="stayDetails">
-                    <div class="stayDetailsRows">
-                      <div class="type">Entire bungalow</div>
-                      <b class="title">Matterhorn Suites</b>
-                      <div class="price5">$575/night</div>
-                    </div>
-                    <button class="video">
-                      <img class="videoIcon" alt="" src="/video-icon2.svg" />
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <div class="stars">
-                      <img class="staricon" alt="" src="/staricon.svg" />
-                      <div class="rating1">4.9</div>
-                    </div>
-                    <div class="reviews">(60 reviews)</div>
-                  </div>
-                  <button class="moreDetailsButton">
-                    <div class="button">More details</div>
-                  </button>
-                </div>
-              </div>
-              <div class="popularHotelCard">
-                <div class="hotelCard">
-                  <img class="imageIcon1" alt="" src="/unsplashrlwe8f8anoc1@2x.png" />
-                  <div class="stayDetails">
-                    <div class="stayDetailsRows">
-                      <div class="type">2-Story beachfront suite</div>
-                      <b class="title">Discovery Shores</b>
-                      <div class="price5">$360/night</div>
-                    </div>
-                    <button class="video">
-                      <img class="videoIcon" alt="" src="/video-icon2.svg" />
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <div class="stars">
-                      <img class="staricon" alt="" src="/staricon.svg" />
-                      <div class="rating1">4.8</div>
-                    </div>
-                    <div class="reviews">(116 reviews)</div>
-                  </div>
-                  <button class="moreDetailsButton">
-                    <div class="button">More details</div>
-                  </button>
-                </div>
-              </div>
-              <div class="popularHotelCard">
-                <div class="hotelCard">
-                  <img class="imageIcon1" alt="" src="/unsplashrlwe8f8anoc2@2x.png" />
-                  <div class="stayDetails">
-                    <div class="stayDetailsRows">
-                      <div class="type">Single deluxe hut</div>
-                      <b class="title">{`Arctic Hut `}</b>
-                      <div class="price5">$420/night</div>
-                    </div>
-                    <button class="video">
-                      <img class="videoIcon" alt="" src="/video-icon3.svg" />
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <div class="stars">
-                      <img class="staricon" alt="" src="/staricon.svg" />
-                      <div class="rating1">4.7</div>
-                    </div>
-                    <div class="reviews">(78 reviews)</div>
-                  </div>
-                  <button class="moreDetailsButton">
-                    <div class="button">More details</div>
-                  </button>
-                </div>
-              </div>
-              <div class="popularHotelCard3">
-                <div class="hotelCard">
-                  <img class="imageIcon1" alt="" src="/unsplashrlwe8f8anoc3@2x.png" />
-                  <div class="stayDetails">
-                    <div class="stayDetailsRows">
-                      <div class="type">Deluxe King Room</div>
-                      <b class="title">Lake Louise Inn</b>
-                      <div class="price5">$244/night</div>
-                    </div>
-                    <button class="video">
-                      <img class="videoIcon" alt="" src="/video-icon3.svg" />
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <div class="stars">
-                      <img class="staricon" alt="" src="/staricon.svg" />
-                      <div class="rating1">4.6</div>
-                    </div>
-                    <div class="reviews">(63 reviews)</div>
-                  </div>
-                  <button class="moreDetailsButton">
-                    <div class="button">More details</div>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="mobileViewAllStays">
-              <div class="viewAllDestinations1">View all stays</div>
-              <img class="notificationBellIcon" alt="" src="/arrowright.svg" />
-            </div>
-          </div>
-        </div>
-        <div class="footerSection">
-          <div class="subscribeSection">
-            <div class="shareYourTravelsForm">
-              <div class="formHeadingSection">
-                <b class="recentSearches">subscribe to our newsletter</b>
-                <b class="formTitle">Get weekly updates</b>
-              </div>
-              <form class="form">
-                <div class="formText">
-                  <div class="formDescription">Fill in your details to join the party!</div>
-                </div>
-                <div class="formFields">
-                  <div class="formText">
-                    <div class="input">
-                      <div class="inactive">
-                        <div class="muiautocompletetag">
-                          <div class="chip">
-                            <div class="container">
-                              <div class="avatar">
-                                <div class="op">F</div>
-                              </div>
-                              <div class="typography">
-                                <div class="chip1">Chip</div>
-                              </div>
-                              <img class="notificationBellIcon" alt="" src="/cancel.svg" />
-                            </div>
-                          </div>
-                          <div class="chip">
-                            <div class="container">
-                              <div class="avatar">
-                                <div class="op">F</div>
-                              </div>
-                              <div class="typography">
-                                <div class="chip1">Chip</div>
-                              </div>
-                              <img class="notificationBellIcon" alt="" src="/cancel.svg" />
-                            </div>
-                          </div>
+              <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '24px', fontSize: '24px',}>
+                <div :style={borderRadius: '14px', backgroundColor: '#fff', boxShadow: '0px 10px 56px rgba(0, 0, 0, 0.05)', display: 'flex', flexDirection: 'row', padding: '50px 24px', alignItems: 'flex-start', justifyContent: 'flex-start', cursor: 'pointer',} @click='onPricingClick'>
+                  <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '48px',}>
+                    <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '42px',}>
+                      <div :style={display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '37px',}>
+                        <div :style={display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '24px',}>
+                          <b :style={position: 'relative', lineHeight: '32px', display: 'inline-block', width: '336px',}>Standart</b>
+                          <div :style={position: 'relative', fontSize: '16px', lineHeight: '24px', color: '#969696', display: 'inline-block', width: '296px', height: '52px', flexShrink: '0',}>The national average cost of buying coin easy.</div>
                         </div>
-                        <div class="yourName">Your name</div>
-                        <div class="muiAutocompleteIndicator">
-                          <div class="iconbutton">
-                            <div class="unstylediconbutton">
-                              <img class="closeIcon" alt="" src="/close.svg" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="arrow">
-                          <img class="notificationBellIcon" alt="" />
+                        <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'center', textAlign: 'left', fontSize: '56px',}>
+                          <b :style={position: 'relative', lineHeight: '60px',}>$5</b>
+                          <div :style={position: 'relative', fontSize: '16px', letterSpacing: '0.01em', lineHeight: '24px', fontWeight: '500', color: '#969699', display: 'inline-block', width: '68px', flexShrink: '0',}>/month</div>
                         </div>
                       </div>
+                      <button :style={cursor: 'pointer', border: 'none', padding: '12px 65px', backgroundColor: '#00218f', borderRadius: '8px', width: '336px', overflow: 'hidden', display: 'flex', flexDirection: 'row', boxSizing: 'border-box', alignItems: 'center', justifyContent: 'center',} @click='onCTASELECTPLANClick'>
+                        <b :style={position: 'relative', fontSize: '16px', letterSpacing: '0.01em', lineHeight: '24px', display: 'flex', fontFamily: ''Be Vietnam Pro'', color: '#fff', textAlign: 'center', alignItems: 'center', justifyContent: 'center', width: '288px', flexShrink: '0',}>Select Plan</b>
+                      </button>
                     </div>
-                  </div>
-                  <div class="formText">
-                    <div class="input">
-                      <div class="inactive">
-                        <div class="muiautocompletetag">
-                          <div class="chip">
-                            <div class="container">
-                              <div class="avatar">
-                                <div class="op">F</div>
-                              </div>
-                              <div class="typography">
-                                <div class="chip1">Chip</div>
-                              </div>
-                              <img class="notificationBellIcon" alt="" src="/cancel.svg" />
-                            </div>
-                          </div>
-                          <div class="chip">
-                            <div class="container">
-                              <div class="avatar">
-                                <div class="op">F</div>
-                              </div>
-                              <div class="typography">
-                                <div class="chip1">Chip</div>
-                              </div>
-                              <img class="notificationBellIcon" alt="" src="/cancel.svg" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="yourName">Email address</div>
-                        <div class="muiAutocompleteIndicator">
-                          <div class="iconbutton">
-                            <div class="unstylediconbutton">
-                              <img class="closeIcon" alt="" src="/close.svg" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="arrow">
-                          <img class="notificationBellIcon" alt="" />
-                        </div>
+                    <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '24px', textAlign: 'left', fontSize: '14px',}>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '11px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '305px', flexShrink: '0',}>5 collections</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>{`Worldwide accessbility `}</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>25 automation actions</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Access all features</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>24 hours support</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2156.svg' />
+                        <div :style={position: 'relative', textDecoration: 'line-through', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Sync accross devices</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2156.svg' />
+                        <div :style={position: 'relative', textDecoration: 'line-through', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Share with more 5 users</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="searchButton">
-                  <div class="submit">Submit</div>
+                <div :style={borderRadius: '14px', backgroundColor: '#00218f', boxShadow: '0px 10px 56px rgba(0, 0, 0, 0.05)', display: 'flex', flexDirection: 'row', padding: '50px 24px', alignItems: 'flex-start', justifyContent: 'flex-start', cursor: 'pointer', color: '#fff',} @click='onPricing1Click'>
+                  <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '48px',}>
+                    <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '42px',}>
+                      <div :style={display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '37px',}>
+                        <div :style={display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '24px',}>
+                          <b :style={position: 'relative', lineHeight: '32px', display: 'inline-block', width: '336px',}>Extended</b>
+                          <div :style={position: 'relative', fontSize: '16px', lineHeight: '24px', color: '#ececec', display: 'inline-block', width: '296px', height: '52px', flexShrink: '0',}>The national average cost of buying coin easy.</div>
+                        </div>
+                        <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'center', textAlign: 'left', fontSize: '56px',}>
+                          <b :style={position: 'relative', lineHeight: '60px', display: 'inline-block', width: '98px', flexShrink: '0',}>$12</b>
+                          <div :style={position: 'relative', fontSize: '16px', letterSpacing: '0.01em', lineHeight: '24px', fontWeight: '500', color: '#969699', display: 'inline-block', width: '68px', flexShrink: '0',}>/month</div>
+                        </div>
+                      </div>
+                      <button :style={cursor: 'pointer', border: 'none', padding: '12px 65px', backgroundColor: '#fff', borderRadius: '8px', width: '336px', overflow: 'hidden', display: 'flex', flexDirection: 'row', boxSizing: 'border-box', alignItems: 'center', justifyContent: 'center',} @click='onCTASELECTPLAN1Click'>
+                        <b :style={position: 'relative', fontSize: '16px', letterSpacing: '0.01em', lineHeight: '24px', display: 'flex', fontFamily: ''Be Vietnam Pro'', color: '#152c5b', textAlign: 'center', alignItems: 'center', justifyContent: 'center', width: '288px', flexShrink: '0',}>Select Plan</b>
+                      </button>
+                    </div>
+                    <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '24px', textAlign: 'left', fontSize: '14px',}>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '11px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-21481.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '305px', flexShrink: '0',}>Unlimited collections</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-21481.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Worldwide accessbiliy</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-21481.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Unlimited automation actions</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-21481.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Access all features</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-21481.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>24 hours support</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-21481.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Sync accross devices</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-21481.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Share with more 5 users</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </form>
+                <div :style={borderRadius: '14px', backgroundColor: '#fff', boxShadow: '0px 10px 56px rgba(0, 0, 0, 0.05)', display: 'flex', flexDirection: 'row', padding: '50px 24px', alignItems: 'flex-start', justifyContent: 'flex-start', cursor: 'pointer',} @click='onPricing2Click'>
+                  <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '48px',}>
+                    <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '42px',}>
+                      <div :style={display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '37px',}>
+                        <div :style={display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '24px',}>
+                          <b :style={position: 'relative', lineHeight: '32px', display: 'inline-block', width: '336px',}>Premium+</b>
+                          <div :style={position: 'relative', fontSize: '16px', lineHeight: '24px', color: '#969696', display: 'inline-block', width: '296px', height: '52px', flexShrink: '0',}>The national average cost of buying coin easy.</div>
+                        </div>
+                        <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'center', textAlign: 'left', fontSize: '56px',}>
+                          <b :style={position: 'relative', lineHeight: '60px',}>$16</b>
+                          <div :style={position: 'relative', fontSize: '16px', letterSpacing: '0.01em', lineHeight: '24px', fontWeight: '500', color: '#969699', display: 'inline-block', width: '68px', flexShrink: '0',}>/month</div>
+                        </div>
+                      </div>
+                      <button :style={cursor: 'pointer', border: 'none', padding: '12px 65px', backgroundColor: '#00218f', borderRadius: '8px', width: '336px', overflow: 'hidden', display: 'flex', flexDirection: 'row', boxSizing: 'border-box', alignItems: 'center', justifyContent: 'center',} @click='onCTASELECTPLAN2Click'>
+                        <b :style={position: 'relative', fontSize: '16px', letterSpacing: '0.01em', lineHeight: '24px', display: 'flex', fontFamily: ''Be Vietnam Pro'', color: '#fff', textAlign: 'center', alignItems: 'center', justifyContent: 'center', width: '288px', flexShrink: '0',}>Select Plan</b>
+                      </button>
+                    </div>
+                    <div :style={display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '24px', textAlign: 'left', fontSize: '14px',}>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '11px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '305px', flexShrink: '0',}>Unlimited collections</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Worldwide accessbiliy</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Unlimited automation actions</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Access all features</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>24 hours support</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Sync accross devices</div>
+                      </div>
+                      <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px',}>
+                        <img :style={position: 'relative', width: '20px', height: '20px', flexShrink: '0',} alt='' src='/group-2148.svg' />
+                        <div :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '20px', fontWeight: '500', display: 'flex', alignItems: 'center', width: '306px', flexShrink: '0',}>Share with more 10 users</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <footer class="footer">
-            <div class="fickleflightBio">
-              <img class="logoIcon" alt="" src="/logo.svg" />
-              <div class="fickleFlightDescription">Fickle Flight is your one-stop locofy travel portal. We offer hassle free flight and hotel bookings. We also have all your needs in you online shop.</div>
-              <div class="socialIcons">
-                <img class="facebookIcon" alt="" src="/entyposocialfacebookwithcircle.svg" />
-                <img class="facebookIcon" alt="" src="/entyposocialinstagramwithcircle.svg" />
-                <img class="facebookIcon" alt="" src="/entyposocialtwitterwithcircle.svg" />
+          <div :style={alignSelf: 'stretch', overflow: 'hidden', display: 'flex', flexDirection: 'column', padding: '100px 120px', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '60px', zIndex: '2', fontSize: '40px',}>
+            <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',}>
+              <b :style={position: 'relative', letterSpacing: '0.01em', lineHeight: '81px',}>GroundDesk is loved by users</b>
+              <div :style={display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '20px',}>
+                <img :style={position: 'relative', width: '64px', height: '64px', flexShrink: '0', overflow: 'hidden', opacity: '0.5',} alt='' src='/arrowleftcircle.svg' />
+                <img :style={position: 'relative', width: '64px', height: '64px', flexShrink: '0', overflow: 'hidden',} alt='' src='/arrowrightcircle.svg' />
               </div>
             </div>
-            <div class="seperator" />
-            <div class="footerLinks">
-              <div class="companySection">
-                <div class="company">Company</div>
-                <div class="companyLinks">
-                  <div class="explore">About Us</div>
-                  <div class="explore">News</div>
-                  <div class="explore">Careers</div>
-                  <div class="howWeWork">How we work</div>
-                </div>
+            <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', fontSize: '14px', color: '#969696',}>
+              <div :style={position: 'relative', width: '384px', height: '376px', flexShrink: '0',}>
+                <div :style={position: 'absolute', top: '0px', left: '0px', borderRadius: '20px', backgroundColor: '#fff', border: '1px solid #eaeaea', boxSizing: 'border-box', width: '384px', height: '376px',} />
+                <div :style={position: 'absolute', top: '40px', left: '124px', fontSize: '18px', lineHeight: '28px', fontWeight: '600', color: '#343434',}>Briana Patton</div>
+                <div :style={position: 'absolute', top: '74px', left: '124px', lineHeight: '22px',}>{`Manager `}</div>
+                <div :style={position: 'absolute', top: '128px', left: '32px', lineHeight: '24px', display: 'inline-block', width: '320px',}>Sed mattis est eget penatibus mauris, sed condimentum vitae viverra. Ipsum ut aliquet et morbi ac in. Lacinia mattis eget nisl pellentesque non, porttitor. Vitae et vestibulum ac id. Dui aliquet porttitor libero consequat volutpat eget sed turpis. Feugiat maecenas commodo et morbi morbi gravida.</div>
+                <img :style={position: 'absolute', top: '32px', left: '32px', borderRadius: '20px', width: '72px', height: '72px', objectFit: 'cover',} alt='' src='/mask@2x.png' />
+                <img :style={position: 'absolute', top: '320px', left: '32px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '58px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '84px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '110px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '136px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
               </div>
-              <div class="companySection">
-                <div class="company">Support</div>
-                <div class="companyLinks">
-                  <div class="explore">Account</div>
-                  <div class="howWeWork">Support Center</div>
-                  <div class="explore">FAQ</div>
-                  <div class="explore">Accessibility</div>
-                </div>
+              <div :style={position: 'relative', width: '384px', height: '376px', flexShrink: '0',}>
+                <div :style={position: 'absolute', top: '0px', left: '0px', borderRadius: '20px', backgroundColor: '#fff', border: '1px solid #eaeaea', boxSizing: 'border-box', width: '384px', height: '376px',} />
+                <div :style={position: 'absolute', top: '40px', left: '124px', fontSize: '18px', lineHeight: '28px', fontWeight: '600', color: '#343434',}>Imelda Cowen</div>
+                <div :style={position: 'absolute', top: '74px', left: '124px', lineHeight: '22px',}>Consultant</div>
+                <div :style={position: 'absolute', top: '128px', left: '32px', lineHeight: '24px', display: 'inline-block', width: '320px',}>Sapien praesent tristique iaculis amet sit odio pellentesque. Sit nulla pretium amet, fames aenean. Nascetur augue vulputate sed pretium pretium. Scelerisque amet facilisis ut pulvinar morbi a egestas. Vel vulputate dolor nisl in non. Amet enim ultricies imperdiet ac.</div>
+                <img :style={position: 'absolute', top: '32px', left: '32px', borderRadius: '20px', width: '72px', height: '72px', objectFit: 'cover',} alt='' src='/mask1@2x.png' />
+                <img :style={position: 'absolute', top: '320px', left: '32px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star1.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '58px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star1.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '84px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star1.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '110px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star1.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '136px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star1.svg' />
               </div>
-              <div class="moreSection">
-                <div class="company">More</div>
-                <div class="companyLinks">
-                  <div class="explore">Covid Advisory</div>
-                  <div class="explore">Airline Fees</div>
-                  <div class="explore">Tips</div>
-                  <div class="howWeWork">Quarantine Rules</div>
-                </div>
+              <div :style={position: 'relative', width: '384px', height: '376px', flexShrink: '0',}>
+                <div :style={position: 'absolute', top: '0px', left: '0px', borderRadius: '20px', backgroundColor: '#fff', border: '1px solid #eaeaea', boxSizing: 'border-box', width: '384px', height: '376px',} />
+                <div :style={position: 'absolute', top: '40px', left: '124px', fontSize: '18px', lineHeight: '28px', fontWeight: '600', color: '#343434',}>Alfred Walton</div>
+                <div :style={position: 'absolute', top: '74px', left: '124px', lineHeight: '22px',}>Manager</div>
+                <div :style={position: 'absolute', top: '128px', left: '32px', lineHeight: '24px', display: 'inline-block', width: '320px',}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra bibendum feugiat diam egestas ornare quisque tincidunt. Ipsum tortor, pretium lectus urna felis condimentum cursus at. Platea a, pulvinar lacinia id. Augue tortor nunc, ultrices nam in augue a.</div>
+                <img :style={position: 'absolute', top: '32px', left: '32px', borderRadius: '20px', width: '72px', height: '72px', objectFit: 'cover',} alt='' src='/mask2@2x.png' />
+                <img :style={position: 'absolute', top: '320px', left: '32px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '58px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '84px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '110px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
+                <img :style={position: 'absolute', top: '320px', left: '136px', borderRadius: '20px', width: '24px', height: '24px', overflow: 'hidden',} alt='' src='/star.svg' />
               </div>
             </div>
-          </footer>
-        </div>
-      </div>
-      </template>
-      <script>
+          </div>
+          <div :style={alignSelf: 'stretch', backgroundColor: '#f9f9f9', overflow: 'hidden', display: 'flex', flexDirection: 'column', padding: '20px 120px', alignItems: 'flex-start', justifyContent: 'flex-start', zIndex: '1', fontSize: '18px', color: '#343434',}>
+            <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', gap: '58px',}>
+              <div :style={alignSelf: 'stretch', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', gap: '319px',}>
+                <div :style={position: 'relative', width: '235px', height: '137px', flexShrink: '0',}>
+                  <div :style={position: 'absolute', top: '73px', left: '0px', lineHeight: '32px', display: 'inline-block', width: '235px',}>Manage file easily. Everywhere, everytime.</div>
+                  <div :style={position: 'absolute', top: '0px', left: '0px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', gap: '10px', color: '#0c0047',}>
+                    <img :style={position: 'relative', width: '37.34px', height: '36px', flexShrink: '0',} alt='' src='/vector1.svg' />
+                    <div :style={position: 'relative', lineHeight: '21px', fontWeight: '600',}>GroundDesk</div>
+                  </div>
+                </div>
+                <div :style={position: 'relative', width: '645px', height: '226px', flexShrink: '0', fontSize: '16px',}>
+                  <div :style={position: 'absolute', top: '30px', left: '159px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '29px',}>
+                    <b :style={position: 'relative', fontSize: '18px', lineHeight: '20px', fontFamily: 'Manrope',}>Support</b>
+                    <div :style={position: 'relative', lineHeight: '20px', opacity: '0.8',}>FAQ</div>
+                    <div :style={position: 'relative', lineHeight: '20px', opacity: '0.8',}>Privacy Policy</div>
+                    <div :style={position: 'relative', lineHeight: '20px', opacity: '0.8',}>Terms of Services</div>
+                  </div>
+                  <div :style={position: 'absolute', top: '30px', left: '366px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '29px',}>
+                    <b :style={position: 'relative', fontSize: '18px', lineHeight: '20px', fontFamily: 'Manrope',}>Our Works</b>
+                    <div :style={position: 'relative', lineHeight: '20px', opacity: '0.8',}>Pricing</div>
+                    <div :style={position: 'relative', lineHeight: '20px', opacity: '0.8',}>Customer</div>
+                    <div :style={position: 'relative', lineHeight: '20px', opacity: '0.8',}>Product</div>
+                  </div>
+                  <div :style={position: 'absolute', top: '29px', left: '0px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '29px', fontFamily: 'Manrope',}>
+                    <b :style={position: 'relative', fontSize: '18px', lineHeight: '20px',}>Company</b>
+                    <div :style={position: 'relative', lineHeight: '20px', fontFamily: ''Be Vietnam Pro'', opacity: '0.8',}>About Us</div>
+                    <div :style={position: 'relative', lineHeight: '20px', opacity: '0.8',}>Product</div>
+                    <div :style={position: 'relative', lineHeight: '20px', fontFamily: ''Be Vietnam Pro'', opacity: '0.8',}>Testimonial</div>
+                  </div>
+                  <img :style={position: 'absolute', top: '29px', left: '525px', width: '120px', height: '167px', objectFit: 'cover',} alt='' src='/mask-group@2x.png' />
+                </div>
+              </div>
+              <div :style={position: 'relative', fontSize: '16px', lineHeight: '28px', opacity: '0.6',}>©2022 GrounDesk. All right reserved</div>
+            </div>
+          </div>
+          <img :style={position: 'absolute', margin: '0', top: '200px', left: '1967px', width: '2794px', height: '2336px', flexShrink: '0', zIndex: '0',} alt='' src='/ellipse-257.svg' />
+        </div></template>
+        <script lang='ts'>
         import { defineComponent } from 'vue'
-        // import { useRouter } from "vue-router";
+            
+            
+    
         export default defineComponent({
-          name: "VueComp",
+          name: 'LandingPage',
+          
+          
           methods: {
-            onTripMenuItemClick() {
-              // router.push("/hotels-page");
-            },
-            onViewAllStaysButtonclick() {
-              // router.push("/hotels-page");
-            },
-            onViewAllStaysButton1Click() {
-              // router.push("/hotels-page");
-            }
-          }
-        })
-      </script>
-
-<style scoped>
-.fickleflightIcon {
-  position: relative;
-  width: 174px;
-  height: 32px;
-  flex-shrink: 0;
-  }
-  .explore {
-  position: relative;
-  }
-  .search {
-  position: relative;
-  color: var(--color-darkslategray-200);
-  }
-  .hotels {
-  cursor: pointer;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  position: relative;
-  font-size: var(--font-size-sm);
-  font-family: var(--font-roboto);
-  color: var(--color-darkslategray-200);
-  text-align: left;
-  display: inline-block;
-  }
-  .navigationMenu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--gap-11xl);
-  }
-  .hamburgerMenuIcon {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  overflow: hidden;
-  display: none;
-  }
-  .notificationBellIcon {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  overflow: hidden;
-  }
-  .avatarIcon {
-  border-radius: var(--br-19xl);
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
-  object-fit: cover;
-  }
-  .accountSection {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-xs);
-  }
-  .navigationRight {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--gap-17xl);
-  }
-  .topContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  }
-  .topHeader {
-  align-self: stretch;
-  background-color: var(--color-white-100);
-  height: 77px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-3xl) var(--padding-61xl);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  width: 100%;
-  top: 0;
-  background: #ffffff;
-  text-align: left;
-  font-size: var(--font-size-sm);
-  color: var(--color-cornflowerblue-200);
-  font-family: var(--font-roboto);
-  }
-  .recentSearches {
-  align-self: stretch;
-  position: relative;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  }
-  .departure {
-  position: relative;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  }
-  .planeicon {
-  position: relative;
-  width: 118px;
-  height: 24px;
-  flex-shrink: 0;
-  }
-  .arrival {
-  position: relative;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  text-align: right;
-  }
-  .toAndFrom {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  }
-  .departureInfo {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-9xs);
-  font-size: var(--font-size-xl);
-  color: var(--color-black);
-  }
-  .recentSearch {
-  flex: 1;
-  border-radius: var(--br-5xs);
-  border: 1px solid var(--color-whitesmoke-100);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-xl);
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-2xl);
-  }
-  .recentSearchesSection {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-mini);
-  }
-  .iconVector {
-  position: relative;
-  width: 45px;
-  height: 39px;
-  flex-shrink: 0;
-  }
-  .icon {
-  border-radius: var(--br-base);
-  background-color: var(--color-palevioletred);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-smi) var(--padding-3xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .text {
-  position: relative;
-  font-size: var(--font-size-mini);
-  letter-spacing: 0.04em;
-  font-family: var(--font-roboto);
-  color: var(--color-gray-100);
-  text-align: center;
-  }
-  .tripMenuItem {
-  cursor: pointer;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-5xs);
-  }
-  .icon1 {
-  border-radius: var(--br-base);
-  background-color: var(--color-sandybrown);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-smi) var(--padding-3xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .icon2 {
-  border-radius: var(--br-base);
-  background-color: var(--color-mediumspringgreen);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-smi) var(--padding-3xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .icon3 {
-  border-radius: var(--br-base);
-  background-color: var(--color-gold);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-smi) var(--padding-3xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .icon4 {
-  border-radius: var(--br-base);
-  background-color: var(--color-cornflowerblue-100);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-smi) var(--padding-3xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .icon5 {
-  border-radius: var(--br-base);
-  background-color: var(--color-yellowgreen);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-smi) var(--padding-3xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .tripMenu {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  }
-  .prepareMenu {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-xl);
-  font-size: var(--font-size-lg);
-  color: var(--color-lightgray);
-  }
-  .flightDetails {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-17xl);
-  font-size: var(--font-size-5xl);
-  color: var(--color-cornflowerblue-300);
-  }
-  .upcomingFlightSection {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xl);
-  font-size: var(--font-size-lg);
-  }
-  .mostPopularLocofy {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-11xl);
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  color: var(--color-darkslategray-400);
-  }
-  .titleContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-7xs);
-  }
-  .viewAllDestinations {
-  position: relative;
-  font-size: var(--font-size-lg);
-  letter-spacing: 0.04em;
-  font-weight: 500;
-  font-family: var(--font-roboto);
-  color: var(--color-cornflowerblue-300);
-  text-align: right;
-  }
-  .viewAllTop {
-  cursor: pointer;
-  border: none;
-  padding: 0;
-  background-color: var(--color-white-100);
-  border-radius: var(--br-12xl);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  }
-  .destinationsTitles {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  }
-  .cardimageIcon {
-  position: absolute;
-  margin: 0 !important;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
-  border-radius: var(--br-3xs);
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  }
-  .destination {
-  flex: 1;
-  position: relative;
-  font-size: var(--font-size-xl);
-  letter-spacing: 0.02em;
-  font-family: var(--font-roboto);
-  color: var(--color-white-100);
-  text-align: left;
-  }
-  .from {
-  position: relative;
-  font-size: var(--font-size-base);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-family: var(--font-roboto);
-  color: var(--color-white-100);
-  text-align: right;
-  }
-  .price {
-  position: relative;
-  font-size: var(--font-size-19xl);
-  line-height: 38px;
-  font-family: var(--font-baloo-bhai);
-  color: var(--color-white-100);
-  text-align: right;
-  }
-  .details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: var(--gap-11xs);
-  }
-  .destinationDetails {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-5xs) var(--padding-xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  z-index: 1;
-  }
-  .pariscard {
-  align-self: stretch;
-  border-radius: var(--br-3xs);
-  height: 182px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  gap: var(--gap-3xs);
-  }
-  .popularDestinationCard {
-  cursor: pointer;
-  border: none;
-  padding: 0px var(--padding-base);
-  background-color: transparent;
-  width: 25%;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  }
-  .popDestinationItems {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: -16px;
-  margin-right: -16px;
-  }
-  .viewAllDestinations1 {
-  position: relative;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-  }
-  .viewAllBottom {
-  border-radius: var(--br-12xl);
-  background-color: var(--color-white-100);
-  display: none;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  text-align: right;
-  }
-  .popDestinationsMain {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xl);
-  font-size: var(--font-size-lg);
-  color: var(--color-cornflowerblue-300);
-  }
-  .recommendedLocofyHolidays {
-  flex: 1;
-  position: relative;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  }
-  .recHolidaysTitle {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  }
-  .imageIcon {
-  align-self: stretch;
-  position: relative;
-  border-radius: var(--br-3xs) var(--br-3xs) 0px 0px;
-  max-width: 100%;
-  overflow: hidden;
-  height: 242px;
-  flex-shrink: 0;
-  object-fit: cover;
-  }
-  .duration {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-base);
-  letter-spacing: 0.02em;
-  font-family: var(--font-roboto);
-  color: var(--color-darkgray-100);
-  text-align: left;
-  }
-  .destinationParent {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-10xs);
-  }
-  .holidayDetails {
-  align-self: stretch;
-  border-radius: 0px 0px var(--br-3xs) var(--br-3xs);
-  background-color: var(--color-white-100);
-  border: 1px solid var(--color-whitesmoke-100);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-xl) var(--padding-base);
-  align-items: center;
-  justify-content: center;
-  }
-  .recommendedHolidayCard {
-  cursor: pointer;
-  border: none;
-  padding: 0px var(--padding-base);
-  background-color: transparent;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  width: 25%;
-  }
-  .swiss {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-xl);
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-family: var(--font-roboto);
-  color: var(--color-darkslategray-200);
-  text-align: left;
-  }
-  .div {
-  position: relative;
-  font-size: var(--font-size-13xl);
-  line-height: 34px;
-  font-family: var(--font-baloo-bhai);
-  color: var(--color-cornflowerblue-200);
-  text-align: right;
-  }
-  .recommendedHolidayCard2 {
-  cursor: pointer;
-  border: none;
-  padding: 0px var(--padding-base);
-  background-color: transparent;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  width: 25%;
-  }
-  .recommendedHolidayCard3 {
-  cursor: pointer;
-  border: none;
-  padding: 0px var(--padding-base);
-  background-color: transparent;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  width: 25%;
-  }
-  .recCardsContainer {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: -16px;
-  margin-right: -16px;
-  }
-  .viewHolidaysBottom {
-  border-radius: var(--br-12xl);
-  background-color: var(--color-white-100);
-  display: none;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  text-align: right;
-  font-size: var(--font-size-lg);
-  color: var(--color-cornflowerblue-300);
-  }
-  .recommendedHolidaysContainer {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-5xl);
-  }
-  .popularStays1 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  display: inline-block;
-  width: 1126px;
-  }
-  .popularStaysTitle {
-  flex: 1;
-  position: relative;
-  height: 35px;
-  }
-  .popularStaysHeader {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  }
-  .imageIcon1 {
-  align-self: stretch;
-  position: relative;
-  border-radius: var(--br-3xs);
-  max-width: 100%;
-  overflow: hidden;
-  height: 200px;
-  flex-shrink: 0;
-  object-fit: cover;
-  }
-  .type {
-  align-self: stretch;
-  position: relative;
-  letter-spacing: 0.02em;
-  color: var(--color-gray-100);
-  }
-  .title {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-3xl);
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipses;
-  }
-  .price5 {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-lg);
-  letter-spacing: 0.04em;
-  }
-  .stayDetailsRows {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-7xs);
-  }
-  .videoIcon {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  }
-  .video {
-  cursor: pointer;
-  border: none;
-  padding: var(--padding-12xs);
-  background-color: transparent;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  }
-  .stayDetails {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-2xs);
-  }
-  .staricon {
-  position: relative;
-  width: 17px;
-  height: 17px;
-  flex-shrink: 0;
-  }
-  .rating1 {
-  position: relative;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-  }
-  .stars {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-9xs);
-  }
-  .reviews {
-  position: relative;
-  letter-spacing: 0.04em;
-  color: var(--color-cornflowerblue-200);
-  }
-  .rating {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-4xs);
-  }
-  .button {
-  position: relative;
-  font-size: var(--font-size-mini);
-  letter-spacing: 0.46px;
-  line-height: 26px;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: var(--font-roboto);
-  color: var(--color-cornflowerblue-200);
-  text-align: left;
-  }
-  .moreDetailsButton {
-  cursor: pointer;
-  border: 1px solid var(--color-lavender);
-  padding: 0;
-  background-color: transparent;
-  align-self: stretch;
-  border-radius: var(--br-9xs);
-  box-sizing: border-box;
-  height: 46px;
-  flex-shrink: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  }
-  .hotelCard {
-  align-self: stretch;
-  flex: 1;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-white-100);
-  border: 1px solid var(--color-whitesmoke-100);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-mini) var(--padding-smi);
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-4xl);
-  }
-  .hotelCard:hover {
-  background-color: var(--color-gainsboro-100);
-  cursor: pointer;
-  }
-  .popularHotelCard {
-  flex: 1;
-  height: 442px;
-  display: flex;
-  flex-direction: row;
-  padding: 0px var(--padding-xs);
-  box-sizing: border-box;
-  align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 16px;
-  }
-  .popularHotelCard3 {
-  flex: 1;
-  height: 442px;
-  display: flex;
-  flex-direction: row;
-  padding: 0px var(--padding-xs);
-  box-sizing: border-box;
-  align-items: flex-start;
-  justify-content: center;
-  }
-  .hotelCards {
-  align-self: stretch;
-  display: grid;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  font-size: var(--font-size-base);
-  }
-  .mobileViewAllStays {
-  border-radius: var(--br-12xl);
-  background-color: var(--color-white-100);
-  display: none;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  text-align: right;
-  font-size: var(--font-size-lg);
-  color: var(--color-cornflowerblue-300);
-  }
-  .popularStays {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xl);
-  }
-  .homeContents {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-51xl) var(--padding-61xl);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-61xl);
-  max-width: 1280px;
-  }
-  .formTitle {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-11xl);
-  color: var(--color-darkslategray-100);
-  }
-  .formHeadingSection {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-6xs);
-  }
-  .formDescription {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-lg);
-  line-height: 34px;
-  font-family: var(--font-roboto);
-  color: var(--color-slategray);
-  text-align: left;
-  }
-  .formText {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .op {
-  align-self: stretch;
-  flex: 1;
-  position: relative;
-  font-size: var(--font-size-xs);
-  letter-spacing: 0.4px;
-  line-height: 166%;
-  font-family: var(--font-roboto);
-  color: var(--grey-grey-700);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  .avatar {
-  border-radius: var(--br-45xl);
-  background-color: var(--grey-grey-400);
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  overflow: hidden;
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  }
-  .chip1 {
-  position: relative;
-  font-size: var(--font-size-smi);
-  letter-spacing: 0.16px;
-  line-height: 18px;
-  font-family: var(--font-roboto);
-  color: var(--text-primary);
-  text-align: left;
-  }
-  .typography {
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-10xs) var(--padding-7xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .container {
-  border-radius: var(--br-base);
-  background-color: var(--grey-grey-300);
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-9xs);
-  align-items: center;
-  justify-content: flex-start;
-  }
-  .chip {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .muiautocompletetag {
-  display: none;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-  }
-  .yourName {
-  flex: 1;
-  position: relative;
-  font-size: var(--font-size-base);
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  font-family: var(--font-roboto);
-  color: var(--color-gray-200);
-  text-align: left;
-  }
-  .closeIcon {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  overflow: hidden;
-  }
-  .unstylediconbutton {
-  border-radius: var(--br-29xl);
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-9xs);
-  align-items: center;
-  justify-content: flex-start;
-  }
-  .iconbutton {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  }
-  .muiAutocompleteIndicator {
-  position: relative;
-  width: 28px;
-  height: 28px;
-  flex-shrink: 0;
-  display: none;
-  }
-  .arrow {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .inactive {
-  align-self: stretch;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-base) 0px;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-  }
-  .input {
-  align-self: stretch;
-  border-radius: var(--br-9xs);
-  border: 1px solid var(--color-gray-300);
-  display: flex;
-  flex-direction: column;
-  padding: 0px var(--padding-xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  }
-  .formFields {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  }
-  .submit {
-  position: relative;
-  font-size: var(--font-size-mini);
-  letter-spacing: 0.46px;
-  line-height: 26px;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: var(--font-roboto);
-  color: var(--color-white-100);
-  text-align: center;
-  }
-  .searchButton {
-  border-radius: var(--br-9xs);
-  background-color: var(--color-orange);
-  width: 164px;
-  height: 56px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  padding: 0px var(--padding-3xs);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  }
-  .searchButton:hover {
-  background-color: var(--color-darkgoldenrod-100);
-  }
-  .form {
-  align-self: stretch;
-  border-radius: var(--br-xs);
-  background-color: var(--color-white-100);
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.03);
-  border: 1px solid var(--color-whitesmoke-100);
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-9xl) var(--padding-11xl);
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-mid);
-  }
-  .shareYourTravelsForm {
-  width: 549px;
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-xl);
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-11xl);
-  margin-left: auto;
-  margin-right: auto;
-  position: relative!important;
-  left: auto!important;
-  }
-  .subscribeSection {
-  align-self: stretch;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-33xl) var(--padding-xl);
-  align-items: center;
-  justify-content: center;
-  background-image: url("/subscribe-section@3x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  }
-  .logoIcon {
-  position: relative;
-  width: 174px;
-  height: 33px;
-  flex-shrink: 0;
-  overflow: hidden;
-  }
-  .fickleFlightDescription {
-  align-self: stretch;
-  position: relative;
-  line-height: 27px;
-  }
-  .facebookIcon {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  flex-shrink: 0;
-  overflow: hidden;
-  }
-  .socialIcons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-xl);
-  }
-  .fickleflightBio {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-sm);
-  margin-bottom: 40px!important;
-  }
-  .seperator {
-  align-self: stretch;
-  position: relative;
-  border-right: 1px solid var(--color-gray-400);
-  box-sizing: border-box;
-  width: 1px;
-  flex-shrink: 0;
-  }
-  .company {
-  position: relative;
-  line-height: 27px;
-  font-weight: 500;
-  }
-  .howWeWork {
-  position: relative;
-  display: inline-block;
-  width: 197px;
-  }
-  .companyLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-  font-size: var(--font-size-base);
-  }
-  .companySection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-2xl);
-  }
-  .moreSection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-2xl);
-  }
-  .footerLinks {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  font-size: var(--font-size-xl);
-  }
-  .footer {
-  align-self: stretch;
-  background: linear-gradient(91.74deg, #0b5ba8 25.38%, #299bd8);
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-14xl) var(--padding-65xl);
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-25xl);
-  text-align: left;
-  font-size: var(--font-size-lg);
-  color: var(--color-white-100);
-  font-family: var(--font-roboto);
-  }
-  .footerSection {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: center;
-  font-size: var(--font-size-lg);
-  color: var(--color-cornflowerblue-300);
-  }
-  .homepageTestCase {
-  position: relative;
-  background-color: var(--color-white-100);
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: left;
-  font-size: var(--font-size-11xl);
-  color: var(--color-darkslategray-400);
-  font-family: var(--font-roboto);
-  }
-  .homepageTestCase:hover {
-  background: linear-gradient(#fff, #fff), #87550a;
-  }
-  
-  @media screen and (max-width: 1200px) {
-  .topHeader {
-  padding-left: var(--padding-21xl);
-  padding-right: var(--padding-21xl);
-  box-sizing: border-box;
-  }
-  
-  .recentSearch {
-  width: 520px;
-  }
-  
-  .footer {
-  padding: var(--padding-21xl);
-  box-sizing: border-box;
-  }
-  
-  }
-  @media screen and (max-width: 960px) {
-  .navigationMenu {
-  display: none;
-  }
-  
-  .hamburgerMenuIcon {
-  display: flex;
-  }
-  
-  .topHeader {
-  padding-left: var(--padding-5xl);
-  padding-right: var(--padding-5xl);
-  box-sizing: border-box;
-  }
-  
-  .recentSearch {
-  width: 100%;
-  }
-  
-  .prepareMenu {
-  width: 100%;
-  }
-  
-  .flightDetails {
-  flex-direction: column;
-  }
-  
-  .viewAllTop {
-  display: none;
-  }
-  
-  .popularDestinationCard {
-  padding: var(--padding-base);
-  box-sizing: border-box;
-  width: 50%;
-  }
-  
-  .popDestinationItems {
-  margin-left: -16px;
-  margin-right: -16px;
-  flex-wrap: wrap;
-  margin-top: -16px;
-  margin-bottom: -16px;
-  }
-  
-  .viewAllDestinations1 {
-  width: auto;
-  }
-  
-  .viewAllBottom {
-  display: flex;
-  margin-top: 16px;
-  }
-  
-  .recommendedHolidayCard {
-  width: 50%;
-  margin-bottom: 32px;
-  }
-  
-  .recommendedHolidayCard2 {
-  width: 50%;
-  }
-  
-  .recommendedHolidayCard3 {
-  width: 50%;
-  }
-  
-  .recCardsContainer {
-  margin-left: -16px;
-  margin-right: -16px;
-  flex-wrap: wrap;
-  }
-  
-  .viewHolidaysBottom {
-  display: flex;
-  mrgin-top: 16px;
-  }
-  
-  .mobileViewAllStays {
-  display: flex;
-  margin-top: 16px;
-  }
-  
-  .homeContents {
-  padding-left: var(--padding-11xl);
-  padding-right: var(--padding-11xl);
-  box-sizing: border-box;
-  }
-  
-  .shareYourTravelsForm {
-  padding: var(--padding-5xl) 0px;
-  box-sizing: border-box;
-  }
-  
-  .fickleflightBio {
-  flex: unset;
-  align-self: stretch;
-  }
-  
-  .seperator {
-  display: none;
-  }
-  
-  .footerLinks {
-  flex: unset;
-  align-self: stretch;
-  }
-  
-  .footer {
-  flex-direction: column;
-  padding: var(--padding-21xl) var(--padding-5xl) var(--padding-11xl);
-  box-sizing: border-box;
-  }
-  
-  }
-  @media screen and (max-width: 420px) {
-  .navigationRight {
-  display: flex;
-  }
-  
-  .recentSearch {
-  flex: unset;
-  align-self: stretch;
-  }
-  
-  .recentSearchesSection {
-  flex-direction: column;
-  }
-  
-  .tripMenuItem {
-  padding-bottom: var(--padding-xl);
-  box-sizing: border-box;
-  width: 33.33%;
-  text-align: center;
-  }
-  
-  .tripMenu {
-  flex-direction: row;
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: -28px;
-  margin-right: -28px;
-  }
-  
-  .mostPopularLocofy {
-  font-size: var(--font-size-3xl);
-  }
-  
-  .titleContainer {
-  flex: unset;
-  align-self: stretch;
-  }
-  
-  .destinationsTitles {
-  flex-direction: column;
-  align-self: flex-start;
-  }
-  
-  .popularDestinationCard {
-  width: 100%;
-  }
-  
-  .recommendedLocofyHolidays {
-  font-size: var(--font-size-3xl);
-  }
-  
-  .recommendedHolidayCard {
-  width: 100%;
-  margin-bottom: 32px;
-  }
-  
-  .recommendedHolidayCard2 {
-  width: 100%;
-  margin-bottom: 32px;
-  }
-  
-  .recommendedHolidayCard3 {
-  width: 100%;
-  }
-  
-  .popularStays1 {
-  font-size: var(--font-size-3xl);
-  }
-  
-  .title {
-  font-size: var(--font-size-xl);
-  }
-  
-  .moreDetailsButton {
-  width: 100%!important;
-  }
-  
-  .searchButton {
-  width: 100%;
-  }
-  
-  .shareYourTravelsForm {
-  padding-left: var(--padding-5xl);
-  padding-right: var(--padding-5xl);
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative!important;
-  left: auto!important;
-  width: 100%;
-  }
-  
-  .companySection {
-  margin-bottom: 40px!important;
-  }
-  
-  .footerLinks {
-  flex-direction: column;
-  }
-  
-  .footer {
-  padding: var(--padding-11xl) var(--padding-5xl);
-  box-sizing: border-box;
-  }
-  
-  .homepageTestCase {
-  width: 100%;
-  }
-  .homepageTestCase:hover {
-  background-color: var(--color-orange);
-  }
-  
-  }
-  </style>
+      onFrameButtonClick() {
+        window.open('https://one.google.com/about/plans');
+      }
+    ,
+      onPricingClick() {
+        window.open('https://google.com');
+      }
+    ,
+      onCTASELECTPLANClick() {
+        window.open('https://one.google.com/about/plans');
+      }
+    ,
+      onPricing1Click() {
+        window.open('https://google.com');
+      }
+    ,
+      onCTASELECTPLAN1Click() {
+        window.open('https://one.google.com/about/plans');
+      }
+    ,
+      onPricing2Click() {
+        window.open('https://google.com');
+      }
+    ,
+      onCTASELECTPLAN2Click() {
+        window.open('https://one.google.com/about/plans');
+      }
+    }
+          })
+        </script>
