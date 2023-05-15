@@ -4,7 +4,7 @@ import About from '../views/About.vue'
 import VueComp from '../views/VueComp.vue'
 import CssProperties from '../views/CssProperties.vue'
 import Lottie from '../views/Lottie.vue'
-
+import CssModules from '../views/CssModules.vue'
 interface Route {
   path: string;
   name: string;
@@ -36,6 +36,11 @@ const routes: Route[] = [
     path: "/lottie",
     name: "Lottie",
     component: Lottie,
+  },
+  {
+    path: "/css-modules",
+    name: "CssModules",
+    component: CssModules,
   }
 ];
 
