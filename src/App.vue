@@ -6,7 +6,8 @@
       <li><router-link to="/component-vue">Component Vue</router-link></li>
       <li><router-link to="/css-properties">CSS Properties</router-link></li>
       <li><router-link to="/lottie">Lottie</router-link></li>
-      <li><router-link to="/css-modules">CssModules</router-link></li>
+      <li><router-link to="/css-modules">Css Modules</router-link></li>
+      <li><router-link to="/style-props">Style Props</router-link></li>
     </ul>
   </nav>
     <router-view />

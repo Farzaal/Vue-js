@@ -5,6 +5,7 @@ import VueComp from '../views/VueComp.vue'
 import CssProperties from '../views/CssProperties.vue'
 import Lottie from '../views/Lottie.vue'
 import CssModules from '../views/CssModules.vue'
+import StyleProps from '../views/StyleProps.vue'
 interface Route {
   path: string;
   name: string;
@@ -42,6 +43,11 @@ const routes: Route[] = [
     path: "/css-modules",
     name: "CssModules",
     component: CssModules
+  },
+  {
+    path: "/style-props",
+    name: "StyleProps",
+    component: StyleProps
   }
 ];
 
@@ -53,7 +59,9 @@ const router = createRouter({
 router.beforeEach((toRoute, fromRoute, next) => {
   const documentTitle = toRoute?.meta && toRoute?.meta?.title ? toRoute?.meta?.title : 'SITE_NAME'
   window.document.title = documentTitle;
-  addMetaTag('name="description"', "Site built using locofy")
+  // if (meta) {
+  //   addMetaTag('name="description"', "Site built using locofy")
+  // }
   next();
 })
 
