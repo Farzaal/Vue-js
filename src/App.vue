@@ -16,11 +16,11 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'App'
+  name: 'App',
 });
 </script>
 
-<style>
+<style scoped>
   nav {
     background-color: #333;
     color: #fff;

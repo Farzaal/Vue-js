@@ -16,6 +16,7 @@ const routes: Route[] = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: { title: 'Home Page' }
   },
   {
     path: "/about",
@@ -40,7 +41,7 @@ const routes: Route[] = [
   {
     path: "/css-modules",
     name: "CssModules",
-    component: CssModules,
+    component: CssModules
   }
 ];
 
@@ -48,5 +49,29 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+router.beforeEach((toRoute, fromRoute, next) => {
+  const documentTitle = toRoute?.meta && toRoute?.meta?.title ? toRoute?.meta?.title : 'SITE_NAME'
+  window.document.title = documentTitle;
+  addMetaTag('name="description"', "Site built using locofy")
+  next();
+})
+
+const addMetaTag = (queryProperty, value) => {
+  // Get an element if it exists already
+  let element = document.querySelector(`meta[${queryProperty}]`);
+
+  // Check if the element exists
+  if (element) {
+    // If it does just change the content of the element
+    element.setAttribute("content", value);
+  } else {
+    // It doesn't exist so lets make a HTML element string with the info we want
+    element = `<meta ${queryProperty} content="${value}" />`;
+
+    // And insert it into the head
+    document.head.insertAdjacentHTML("beforeend", element);
+  }
+};
 
 export default router;
