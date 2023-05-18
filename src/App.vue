@@ -8,6 +8,7 @@
       <li><router-link to="/lottie">Lottie</router-link></li>
       <li><router-link to="/css-modules">Css Modules</router-link></li>
       <li><router-link to="/style-props">Style Props</router-link></li>
+      <li><router-link to="/portal-popup">Portal Popup</router-link></li>
     </ul>
   </nav>
     <router-view />

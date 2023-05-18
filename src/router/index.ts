@@ -6,6 +6,7 @@ import CssProperties from '../views/CssProperties.vue'
 import Lottie from '../views/Lottie.vue'
 import CssModules from '../views/CssModules.vue'
 import StyleProps from '../views/StyleProps.vue'
+import PortalPopupView from '../views/PortalPopupView.vue'
 interface Route {
   path: string;
   name: string;
@@ -48,6 +49,11 @@ const routes: Route[] = [
     path: "/style-props",
     name: "StyleProps",
     component: StyleProps
+  },
+  {
+    path: "/portal-popup",
+    name: "PortalPopupView",
+    component: PortalPopupView
   }
 ];
 

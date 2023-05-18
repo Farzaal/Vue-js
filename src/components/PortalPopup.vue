@@ -1,24 +1,25 @@
 <template>
-<div>
-    <Teleport to="body">
-      <div
-        class="portalPopupOverlay"
-        :style="popupStyle"
-        @click="onOverlayClick"
-      >
-        <div :ref="relContainerRef" :style="relativeStyle">
-          <slot></slot>
+    <div>
+        <Teleport to="body">
+        <div
+            class="portalPopupOverlay"
+            :style="popupStyle"
+            @click="onOverlayClick"
+        >
+            <div :ref="relContainerRef" :style="relativeStyle">
+            <slot></slot>
+            </div>
         </div>
-      </div>
-    </Teleport>
-</div>
+        </Teleport>
+    </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent, ref } from 'vue'
+import type * as CSS from 'csstype';
 
 export default defineComponent({
-    name: 'Modal',
+    name: 'PortalPopup',
     data() {
         return {
             relContainerRef: ref(null),
@@ -28,33 +29,37 @@ export default defineComponent({
     props: {
         isOpen: { type: Boolean, default: false },
         overlayColor: { type: String },
-        placement: { type: String },
-        onOutsideClick: { type: Function }
+        placement: { type: String, default: "Centered" },
+        onOutsideClick: { type: Boolean, default: false },
+        zIndex: { type: Number, default: 100 },
+        left: { type: Number, default: 0 },
+        right: { type: Number, default: 0 },
+        top: { type: Number, default: 0 },
+        bottom: { type: Number, default: 0 },
   },
-    },
     mounted() {
-      setPosition();
-      window.addEventListener("resize", setPosition);
-      window.addEventListener("scroll", setPosition, true);
+      this.setPosition();
+      window.addEventListener("resize", this.setPosition);
+      window.addEventListener("scroll", this.setPosition, true);
     },
     unmounted() {
-      window.removeEventListener("resize", setPosition);
-      window.removeEventListener("scroll", setPosition, true);
+      window.removeEventListener("resize", this.setPosition);
+      window.removeEventListener("scroll", this.setPosition, true);
     },
     methods: {
         closeModal() {
             this.$emit('close')
         },
-        onOverlayClick() {
+        onOverlayClick(e: MouseEvent) {
           if (this.onOutsideClick && e.target.classList.contains("portalPopupOverlay")) {
-            this.onOutsideClick();
+            this.$emit('close')
           }
           e.stopPropagation();
-        } 
+        }, 
         setPosition() {
             const relativeItem = this.relativeLayerRef?.current?.getBoundingClientRect();
             const containerItem = this.relContainerRef?.current?.getBoundingClientRect();
-            const style = {};
+            const style: CSS.Properties = {};
             if (relativeItem && containerItem) {
                 const {
                     x: relativeX,
@@ -64,22 +69,22 @@ export default defineComponent({
                 } = relativeItem;
                 const { width: containerW, height: containerH } = containerItem;
                 style.position = "absolute";
-                switch (placement) {
+                switch (this.placement) {
                     case "Top left":
-                        style.top = relativeY - containerH - top;
-                        style.left = relativeX + left;
+                        style.top = relativeY - containerH - this.top;
+                        style.left = relativeX + this.left;
                         break;
                     case "Top right":
-                        style.top = relativeY - containerH - top;
-                        style.left = relativeX + relativeW - containerW - right;
+                        style.top = relativeY - containerH - this.top;
+                        style.left = relativeX + relativeW - containerW - this.right;
                         break;
                     case "Bottom left":
-                        style.top = relativeY + relativeH + bottom;
-                        style.left = relativeX + left;
+                        style.top = relativeY + relativeH + this.bottom;
+                        style.left = relativeX + this.left;
                         break;
                     case "Bottom right":
-                        style.top = relativeY + relativeH + bottom;
-                        style.left = relativeX + relativeW - containerW - right;
+                        style.top = relativeY + relativeH + this.bottom;
+                        style.left = relativeX + relativeW - containerW - this.right;
                         break;
                 }
                 this.relativeStyle = style;
@@ -91,14 +96,14 @@ export default defineComponent({
         }
     },
     computed: {
-        popupStyle() {
+        popupStyle(): CSS.Properties {
             const style = {};
-            style.zIndex = zIndex;
-            if (overlayColor) {
-                style.backgroundColor = overlayColor;
+            style.zIndex = 100;
+            if (this.overlayColor) {
+                style.backgroundColor = this.overlayColor;
             }
-            if (!relativeLayerRef?.current) {
-                switch (placement) {
+            if (!this.relativeLayerRef?.current) {
+                switch (this.placement) {
                     case "Centered":
                         style.alignItems = "center";
                         style.justifyContent = "center";
