@@ -5,6 +5,7 @@
       <li><router-link to="/about">About</router-link></li>
       <li><router-link to="/component-vue">Component Vue</router-link></li>
       <li><router-link to="/css-properties">CSS Properties</router-link></li>
+      <li><router-link to="/portal-drawer">Portal-Drawer</router-link></li>
     </ul>
   </nav>
     <router-view />

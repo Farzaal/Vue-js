@@ -3,7 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import VueComp from '../views/VueComp.vue'
 import CssProperties from '../views/CssProperties.vue'
-
+import FrameComponent from '../views/FrameComponent.vue'
 interface Route {
   path: string;
   name: string;
@@ -30,6 +30,11 @@ const routes: Route[] = [
     path: "/css-properties",
     name: "CssProperties",
     component: CssProperties,
+  },
+  {
+    path: "/portal-drawer",
+    name: "FrameComponent",
+    component: FrameComponent,
   }
 ];
 
